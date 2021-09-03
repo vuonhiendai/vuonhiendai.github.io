@@ -45,20 +45,65 @@
             <button class="tablinks" onclick="opentab(event, 'Landingear')">Landing gear</button>
             <button class="tablinks" onclick="opentab(event, 'Robotic')">Robotic</button>
             <button class="tablinks" onclick="opentab(event, 'ArtInt')">Artificial Intelligent</button>
+            <button class="tablinks" onclick="opentab(event, 'Certifi')">Online Course Certification</button>
+            
         </div>
         <!-- Tab content -->
         <div id="Landingear" class="tabcontent">
-            <div class="singlelg">
+            <div id="singlelg" class="project">
                 <h3>Single Landing gear</h3>
-                <p>This is simulation of single landing gear using Recurdyn-MATLAB
-                   <a href=""></a>
+                <h4>Robust Adaptive Control for an Aircraft Landing Gear Equipped with a Magnetorheological Damper
+                </h4>
+                <p>This research proposes a new robust controller based on model reference sliding mode control and 
+                    adaptive hybrid control to improve the efficiency of absorbing landing impact energy, 
+                    not only considering the variables of aircraft weight and sink speed but also managing uncertainties, 
+                    such as ambient temperature and passive damping coefficient.
                 </p>
+                <p>
+                    <b>For more information:</b> <a href="https://doi.org/10.3390/app10041459">LINK</a>
+                </p>
+                
+                <h4>Intelligent Control Based on a Neural Network for Aircraft Landing Gear with a Magnetorheological Damper in Different Landing Scenarios
+                </h4>
+                
+                <p> This paper adopts a neural network controller trained by two different methods, 
+                    which are genetic algorithm and policy gradient estimation, 
+                    for aircraft landing gear with an MR damper that considers different landing scenarios.
+                </p>
+                <p>
+                    <b>For more information:</b><a href="https://doi.org/10.3390/app10175962">LINK</a>
+                </p>
+                <figure >
+                    <img src="images/MR_structure.jpg" alt="Structure of MR damper" id="SGimage">
+                    <figcaption>Fig.1 Structure of MR damper</figcaption>
+                </figure>
+                <p>The simulation of single landing gear using RECURDYN-MATLAB</p>
+                <div>
+                <video class="SGvideo" controls>
+                    <source src="videos/Test_02_Single_2x.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
+                <h4>
+                    Experiment Search. Up Comming!
+                </h4>
             </div>
-            <div class="multiplelg">
-                <h3>Helicopter</h3>
-                <p>This is simulation of a helicopter with multiple landing gear using Recurdyn-MATLAB
-                   <a href=""></a>
+            <div id="multiplelg" class="project">
+                <h3>Helicopter with multiple landing gear</h3>
+                <p>This paper presents a new skyhook controller, called the skyhook extended controller, 
+                    for a helicopter with multiple landing gears equipped with MR dampers to reduce the 
+                    helicopter’s acceleration at the center of gravity in off-normal landing attitude conditions.
                 </p>
+                <p> <b>For more information:</b>
+                   <a href="https://doi.org/10.3390/app11083667">LINK</a>
+                </p>
+                <p>The simulation of the helicopter using RECURDYN-MATLAB</p>
+                <div>
+                <video class="SGvideo" controls>
+                    <source src="videos/Compare_Add.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                </div>
             </div>
         </div>
 
@@ -83,7 +128,7 @@
             <h2>Artificial Intelligent</h2>
         </div>
 
-        <div id="certification" class="tabcontent">
+        <div id="Certifi" class="tabcontent">
             <h2>Online Class certification </h2>
         </div>
 
