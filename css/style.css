@@ -149,7 +149,6 @@ li{
 .tab button.active {
     background-color: #ccc;
 }
-  
   /* Style the tab content */
 .tabcontent {
     display: none;
