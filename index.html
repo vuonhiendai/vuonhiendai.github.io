@@ -42,10 +42,10 @@
     </section>
     <section id="Event">
         <div class="tab">
-            <button class="tablinks" onclick="opentab(event, 'Landingear')">Landing gear</button>
+            <button class="tablinks" onclick="opentab(event, 'Landingear')" id="defaultOpen">Landing gear</button>
             <button class="tablinks" onclick="opentab(event, 'Robotic')">Robotic</button>
             <button class="tablinks" onclick="opentab(event, 'ArtInt')">Artificial Intelligent</button>
-            <button class="tablinks" onclick="opentab(event, 'Certifi')">Online Course Certification</button>
+            <button class="tablinks" onclick="opentab(event, 'Otheraction')">Other Activities</button>
             
         </div>
         <!-- Tab content -->
@@ -108,17 +108,19 @@
         </div>
 
         <div id="Robotic" class="tabcontent">
-            <div class="armrobot">
+            <div id="armrobot" class="project">
                 <h3>Arm robot</h3>
-                <p>This is the simulation of Hand Robot using SIMSCAPE-Simulink-MATLAB
-                   <a href=""></a>
+                <p>This is the simulation of Hand Robot using SIMSCAPE-Simulink-MATLAB</p>
+                <p>
+                    More information:<a href="https://github.com/vuonhiendai/ArmRobot_SIMSCAPE">LINK</a>
                 </p>
             </div>
 
-            <div class="carrobot">
+            <div id="carrobot" class="project">
                 <h3>Car robot</h3>
-                <p>This is a project to control car robot using adruino and python.
-                   <a href=""></a>
+                <p>This is a project to control car robot using adruino and python.</p>
+                <p>
+                   More information:<a href="https://github.com/vuonhiendai/GUI-for-Car">LINK</a>
                 </p>
             </div>
 
@@ -126,10 +128,18 @@
         
         <div id="ArtInt" class="tabcontent">
             <h2>Artificial Intelligent</h2>
+            <div id="dogcatpre" class="project">
+                <h3>Cat vs Dog Prediction using Tensorflow</h3>
+                <p>This is Web devlopment project which links Machine Learning with Django</p>
+                <p>
+                   More information:<a href="https://github.com/vuonhiendai/DogvsCat_Predict">LINK</a>
+                </p>
+            </div>
         </div>
 
-        <div id="Certifi" class="tabcontent">
-            <h2>Online Class certification </h2>
+        <div id="Otheraction" class="tabcontent">
+            <h2>Other activities </h2>
+                Up Comming!
         </div>
 
     </section>
