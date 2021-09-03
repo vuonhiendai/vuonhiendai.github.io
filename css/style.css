@@ -129,13 +129,26 @@ li{
 }
 
 #SGimage{
-    width: auto;
-    height: 200px;
+    width: 400px;
+    height: auto;
 }
 
-.SGvideo{
-    width: auto;
-    height: 200px;
+#SGvideo{
+    width: 400px;
+    height: auto;
+}
+#LGvideo{
+    width: 400px;
+    height: auto;
+}
+#Arm_Robot{
+    width: 400px;
+    height: auto;
+}
+
+#rccarimage{
+    width: 400px;
+    height: auto;
 }
 
 /* Style the tab */
