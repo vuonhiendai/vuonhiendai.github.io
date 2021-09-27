@@ -114,6 +114,10 @@ li{
     height: inherit;
     border-radius: 25px;
 }
+#icon{
+    height: 40px;
+    width: auto;
+}
 #introduction{
     background-color: rgb(252, 241, 223);
     text-align: center;
@@ -127,28 +131,22 @@ li{
     padding: 5px 5px 5px 5px;
     border: 5px solid black;
 }
-
-#SGimage{
-    width: 400px;
-    height: auto;
+.sub_project{
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    border: 1px double rgb(228, 138, 138);
 }
 
-#SGvideo{
+.Pimage{
     width: 400px;
     height: auto;
-}
-#LGvideo{
-    width: 400px;
-    height: auto;
-}
-#Arm_Robot{
-    width: 400px;
-    height: auto;
+    margin-left: 20px;
 }
 
-#rccarimage{
+.Pvideo{
     width: 400px;
     height: auto;
+    margin-left: 20px;
 }
 
 /* Style the tab */

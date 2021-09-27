@@ -16,13 +16,10 @@
         </div>
         <div id='link_div'>
             <h2></h2>
-            <a href="https://github.com/vuonhiendai"><img src="images/GitHub-Mark-32px.png" id="img" alt="Github"></a>
-            <a href="https://scholar.google.com/citations?user=FfoOgxUAAAAJ&hl=en&sortby=pubdate">
-                <img src="images/google_scholar_icon_130918.png" id="img" alt="Google scholar">
-            </a>
-            <a href="https://www.researchgate.net/profile/Viet-Luong">
-                <img src="images/researchgate_icon_130843.png" id="img" alt="Research gate">
-            </a>
+            <a href="https://github.com/vuonhiendai"><img src="images/GitHub-Mark-32px.png" id="icon" alt="Github"></a>
+            <a href="https://scholar.google.com/citations?user=FfoOgxUAAAAJ&hl=en&sortby=pubdate"><img src="images/google_scholar_icon_130918.png" id="icon" alt="Google scholar"></a>
+            <a href="https://www.researchgate.net/profile/Viet-Luong"><img src="images/researchgate_icon_130843.png" id="icon" alt="Research gate"></a>
+            <a href="docs/CV_VIETLUONG_2021_09_27.pdf"><img src="images/icons8-cv-48.png" id="icon" alt="Research gate"></a>
         </div>
     </section>
     <section id="introduction">
@@ -52,41 +49,48 @@
         <div id="Landingear" class="tabcontent">
             <div id="singlelg" class="project">
                 <h3>Single Landing gear</h3>
-                <h4>Robust Adaptive Control for an Aircraft Landing Gear Equipped with a Magnetorheological Damper
-                </h4>
-                <p>This research proposes a new robust controller based on model reference sliding mode control and 
-                    adaptive hybrid control to improve the efficiency of absorbing landing impact energy, 
-                    not only considering the variables of aircraft weight and sink speed but also managing uncertainties, 
-                    such as ambient temperature and passive damping coefficient.
-                </p>
-                <p>
-                    <b>For more information:</b> <a href="https://doi.org/10.3390/app10041459">LINK</a>
-                </p>
-                
-                <h4>Intelligent Control Based on a Neural Network for Aircraft Landing Gear with a Magnetorheological Damper in Different Landing Scenarios
-                </h4>
-                
-                <p> This paper adopts a neural network controller trained by two different methods, 
-                    which are genetic algorithm and policy gradient estimation, 
-                    for aircraft landing gear with an MR damper that considers different landing scenarios.
-                </p>
-                <p>
-                    <b>For more information:</b><a href="https://doi.org/10.3390/app10175962">LINK</a>
-                </p>
-                <figure >
-                    <img src="images/MR_structure.jpg" alt="Structure of MR damper" id="SGimage">
-                    <figcaption>Fig.1 Structure of MR damper</figcaption>
-                </figure>
-                <p>The simulation of single landing gear using RECURDYN-MATLAB</p>
-                <div>
-                <video id="SGvideo" controls>
-                    <source src="videos/Test_02_Single_2x.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <div id="first_paper" class="sub_project">
+                    <h4>Robust Adaptive Control for an Aircraft Landing Gear Equipped with a Magnetorheological Damper
+                    </h4>
+                    <p>This research proposes a new robust controller based on model reference sliding mode control and 
+                        adaptive hybrid control to improve the efficiency of absorbing landing impact energy, 
+                        not only considering the variables of aircraft weight and sink speed but also managing uncertainties, 
+                        such as ambient temperature and passive damping coefficient.
+                    </p>
+                    <p>
+                        <b>For more information:</b> <a href="https://doi.org/10.3390/app10041459">LINK</a>
+                    </p>
                 </div>
-                <h4>
-                    Experiment Search. Up Comming!
-                </h4>
+                <div id="second_paper" class="sub_project">
+                    <h4>Intelligent Control Based on a Neural Network for Aircraft Landing Gear with a 
+                        Magnetorheological Damper in Different Landing Scenarios
+                    </h4>
+                    
+                    <p> This paper adopts a neural network controller trained by two different methods, 
+                        which are genetic algorithm and policy gradient estimation, 
+                        for aircraft landing gear with an MR damper that considers different landing scenarios.
+                    </p>
+                    <p>
+                        <b>For more information:</b><a href="https://doi.org/10.3390/app10175962">LINK</a>
+                    </p>
+                    <figure >
+                        <img src="images/MR_structure.jpg" alt="Structure of MR damper" id="SGimage" class="Pimage">
+                        <figcaption>Fig.1 Structure of MR damper</figcaption>
+                    </figure>
+                    <p>The simulation of single landing gear using RECURDYN-MATLAB</p>
+                    <div>
+                    <video id="SGvideo" class="Pvideo" controls>
+                        <source src="videos/Test_02_Single_2x.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    </div>
+                </div>
+                <div id="third_paper" class="sub_project">
+                    <h4>
+                        Experiment Search. Up Comming!
+                    </h4>
+
+                </div>
             </div>
             <div id="multiplelg" class="project">
                 <h3>Helicopter with multiple landing gear</h3>
@@ -99,7 +103,7 @@
                 </p>
                 <p>The simulation of the helicopter using RECURDYN-MATLAB</p>
                 <div>
-                <video id="LGvideo" controls>
+                <video id="LGvideo" class="Pvideo" controls>
                     <source src="videos/Compare_Add.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -112,7 +116,7 @@
                 <h3>Arm robot</h3>
                 <p>This is the simulation of Hand Robot using SIMSCAPE-Simulink-MATLAB</p>
 
-                <video id="Arm_Robot" controls>
+                <video id="Arm_Robot" class="Pvideo" controls>
                     <source src="videos/ARM_2_LINK_03_09.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -125,7 +129,7 @@
                 <h3>Car robot</h3>
                 <p>This is a project to control car robot using adruino and python.</p>
                 <figure>
-                    <img src="images/RC_graph.jpg" alt="The project block" id="rccarimage">
+                    <img src="images/RC_graph.jpg" alt="The project block" id="rccarimage" class="Pimage">
                 </figure>
                 <p>
                    More information:<a href="https://github.com/vuonhiendai/GUI-for-Car">LINK</a>
@@ -136,21 +140,28 @@
         
         <div id="ArtInt" class="tabcontent">
             <h2>Artificial Intelligent</h2>
-            <div id="dogcatpre" class="project">
+            <div id="cert" class="sub_project">
+                <h3>Online Course Certification</h3>
+                <p>Introduction to Machine Learning by Duke University</p>
+                <a href="docs/Coursera RJ29PTT8UUFU.pdf">Certification.</a>
+                <a href="https://www.coursera.org/learn/machine-learning-duke">For more information.</a>
+                <p>WORKERA by Stanford University</p>
+                <a href="docs/vuonhiendai@gmail.com-Machine+Learning+Researcher-LH7LZJN5-certificate.pdf">Certification.</a>
+                <a href="https://workera.ai/about">For more information.</a>
+            </div>
+            <div id="dogcatpre" class="sub_project">
                 <h3>Cat vs Dog Prediction using Tensorflow</h3>
                 <p>This is Web devlopment project which links Machine Learning with Django</p>
                 <p>
-                   More information:<a href="https://github.com/vuonhiendai/DogvsCat_Predict">LINK</a>
+                More information:<a href="https://github.com/vuonhiendai/DogvsCat_Predict">LINK</a>
                 </p>
             </div>
         </div>
-
         <div id="Otheraction" class="tabcontent">
             <h2>Other activities </h2>
                 Up Comming!
         </div>
 
     </section>
-
 </body>
 </html>
