@@ -19,4 +19,6 @@ function opentab(evt, tabname) {
     evt.currentTarget.className += " active";
 }
 
-document.getElementById("defaultOpen").click();
+function load_default(){
+  document.getElementById("defaultOpen").click();
+}
