@@ -137,17 +137,35 @@ li{
     border: 1px double rgb(228, 138, 138);
 }
 
-.Pimage{
+figure{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+figure img{
+    display: block;
+    width: 400px;
+    height: auto;  
+}
+figcaption {
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    position: absolute;
+    bottom: -20px;left: 0;right: 0;
+  }
+.video-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+video{
+    display: block;
     width: 400px;
     height: auto;
-    margin-left: 20px;
 }
 
-.Pvideo{
-    width: 400px;
-    height: auto;
-    margin-left: 20px;
-}
+
 
 /* Style the tab */
 .tab {
