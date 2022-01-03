@@ -59,10 +59,19 @@
                 <div id="first_paper" class="sub_project">
                     <h4>Robust Adaptive Control for an Aircraft Landing Gear Equipped with a Magnetorheological Damper
                     </h4>
-                    <p>This research proposes a new robust controller based on model reference sliding mode control and 
-                        adaptive hybrid control to improve the efficiency of absorbing landing impact energy, 
+                    <p> A landing gear of an aircraft is required to function at touchdown in different landing scenarios 
+                        with parametric uncertainties. A typical passive damper in a landing gear has limited performance 
+                        in differing landing scenarios, which can be overcome with magnetorheological (MR) dampers. An MR 
+                        damper is a semi-active system that can adjust damping force by changing the amount of electric 
+                        current applied to it. This paper proposes a new robust controller based on model reference sliding 
+                        mode control and adaptive hybrid control to improve the efficiency of absorbing landing impact energy, 
                         not only considering the variables of aircraft weight and sink speed but also managing uncertainties, 
-                        such as ambient temperature and passive damping coefficient.
+                        such as ambient temperature and passive damping coefficient. To verify the effectiveness of the proposed 
+                        controller, comparative numerical simulations were performed with a passive damper, a skyhook controller, 
+                        and the proposed controller under various landing scenarios. The simulation results show that the proposed 
+                        controller improves the total energy absorber efficiency by up to 10% higher than that of the skyhook controller. 
+                        In addition, the proposed controller is demonstrated to have better adaptability and robustness than the other 
+                        control algorithms in the differing landing scenarios and parametric uncertainties.
                     </p>
                     <p>
                         <b>For more information:</b> <a href="https://doi.org/10.3390/app10041459">LINK</a>
@@ -73,9 +82,20 @@
                         Magnetorheological Damper in Different Landing Scenarios
                     </h4>
                     
-                    <p> This paper adopts a neural network controller trained by two different methods, 
-                        which are genetic algorithm and policy gradient estimation, 
-                        for aircraft landing gear with an MR damper that considers different landing scenarios.
+                    <p> A typical oleo-pneumatic shock-absorbing strut (classic traditional passive damper) in aircraft landing gear 
+                        has a metering pin extending through the orifice, which can vary the orifice area with the compression and 
+                        extension of the damper strut. Because the metering pin is designed in a single landing condition, the traditional 
+                        passive damper cannot adjust its damping force in multiple landing conditions. Magnetorheological (MR) dampers 
+                        have been receiving significant attention as an alternative to traditional passive dampers. An MR damper, which 
+                        is a typical semi-active suspension system, can control the damping force created by MR fluid under the magnetic 
+                        field. Thus, it can be controlled by electric current. This paper adopts a neural network controller trained by 
+                        two different methods, which are genetic algorithm and policy gradient estimation, for aircraft landing gear with 
+                        an MR damper that considers different landing scenarios. The controller learns from a large number of trials, and 
+                        accordingly, the main advantage is that it runs autonomously without requiring system knowledge. Moreover, 
+                        comparative numerical simulations are executed with a passive damper and adaptive hybrid controller under various 
+                        aircraft masses and sink speeds for verifying the effectiveness of the proposed controller. The main simulation 
+                        results show that the proposed controller exhibits comparable performance to the adaptive hybrid controller 
+                        without any needs for the online estimation of landing conditions.
                     </p>
                     <p>
                         <b>For more information:</b><a href="https://doi.org/10.3390/app10175962">LINK</a>
@@ -83,11 +103,31 @@
                 </div>
                 <div id="third_paper" class="sub_project">
                     <h4>
-                        An application of machine learning in control a single landing gear equipped 
-                        with MR damper.
+                        A Supervised Neural Network Control for Magnetorheological Damper in an Aircraft Landing Gear.
                     </h4>
-                    <p>This research adopts a experiment set up for single landing gear equipped with MR damper</p>
-                    <p><b>For more information:</b> <i>Paper is publishing! </i></p>
+                    <p>This paper adopts an intelligent controller based on supervised neural network control for 
+                        a magnetorheological (MR) damper in an aircraft landing gear. An MR damper is a device 
+                        capable of adjusting the damping force by changing the magnetic field generated in electric 
+                        coils. Applying an MR damper to the landing gears of an aircraft could minimize the impact 
+                        at landing and increase the impact absorption efficiency. Various techniques proposed for 
+                        controlling the MR damper in aircraft landing gears require information on the damper force 
+                        or the mass of the aircraft to determine optimal parameters and control commands. 
+                        This information is obtained by estimation with a model in a practical operating environment, 
+                        and the accompanying inaccuracies cause performance degradation. Machine learning-based 
+                        controllers have also been proposed to address model dependency but require a large number 
+                        of drop test data. Unlike simulations, which can conduct a large number of virtual drop tests,
+                        the cost and time are limited in the actual experimental environment. Therefore, a neural network 
+                        controller with supervised learning is proposed in this paper to simulate the behavior of a 
+                        proven controller only with system states. The experimental data generated by applying the hybrid 
+                        controller with the exact mass and force information, which has demonstrated high performance 
+                        among the existing techniques, are set as the target for supervised learning. To verify the 
+                        effectiveness of the proposed controller, drop test experiments using the intelligent controller
+                        and the hybrid controller with and without exact information about aircraft mass and force are 
+                        executed. The experimental results from the drop tests of a landing gear show that the proposed 
+                        controller maintains superior performance to the hybrid controller without using explicit damper 
+                        models or any information on the aircraft mass or strut force. </p>
+                    <p><b>For more information:</b> <a href="https://www.mdpi.com/2076-3417/12/1/400">LINK</a></p>
+                    <p>The landing gear drop test experiment: </p>
                     <div class="video-container">
                         <video id="Exvideo" controls>
                             <source src="videos/Exp_control_Onoff_1080.mp4" type="video/mp4">
@@ -98,9 +138,19 @@
             </div>
             <div id="multiplelg" class="project">
                 <h3>Helicopter with multiple landing gears</h3>
-                <p>This paper presents a new skyhook controller, called the skyhook extended controller, 
-                    for a helicopter with multiple landing gears equipped with MR dampers to reduce the 
-                    helicopter’s acceleration at the center of gravity in off-normal landing attitude conditions.
+                <p> Due to their extensive use in various applications, helicopters need to be able to land in a variety of conditions. 
+                    Typically, a helicopter landing gear system with skids or passive wheel-dampers is designed based on only one 
+                    critical touchdown condition. Thus, this helicopter landing gear system may not perform well in different landing 
+                    conditions. A landing gear system with magnetorheological (MR) dampers would be a promising candidate to solve 
+                    this problem. However, a semi-active controller must be designed to determine the electrical current applied to 
+                    the MR damper to directly manage the damping force. This paper presents a new skyhook controller, called the 
+                    skyhook extended controller, for a helicopter with multiple landing gears equipped with MR dampers to reduce 
+                    the helicopters acceleration at the center of gravity in off-normal landing attitude conditions. A 9-DOF 
+                    simulation model of a helicopter with multiple MR landing gears was built using RECURDYN. To verify the 
+                    effectiveness of the proposed controller, co-simulations were executed with RECURDYN and MATLAB in different 
+                    initial pitch and roll angles at touchdown. The main simulation results show that the proposed controller can 
+                    greatly decrease the peak and rms acceleration of the helicopters center of gravity compared to a traditional 
+                    skyhook controller and passive damper.
                 </p>
                 <p> <b>For more information:</b>
                    <a href="https://doi.org/10.3390/app11083667">LINK</a>
